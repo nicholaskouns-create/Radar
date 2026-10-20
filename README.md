@@ -18,7 +18,7 @@ No raw archives, API keys, or credentials in Git. Dataset downloads require lice
 ```bash
 python -m pip install -r requirements.txt
 python -m pytest -q
-python scripts/benchmark_npz.py --input data/labeled_complex_125.npz --output results/run.json
+python -m scripts.benchmark_npz --input data/labeled_complex_125.npz --output results/run.json
 ```
 
 NPZ requires complex x of shape (N,125) and binary y of shape (N,). The mapping from measured ADC to these 125 complex features must be predeclared, label-blind, and physically justified. Arbitrary reshaping is not a validated encoding. NPZ benchmarks do not replace source-specific CA-CFAR and Doppler baselines on original radar cubes. Supabase stores provenance and small result metadata, not raw ADC.
