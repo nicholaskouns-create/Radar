@@ -1,5 +1,8 @@
 name: Public radar source availability
 on:
+  push:
+    paths:
+      - '.github/workflows/sources.yml'
   workflow_dispatch:
   schedule:
     - cron: '17 15 * * 1'
