@@ -11,6 +11,9 @@ jobs:
   empirical:
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    env:
+      OPENBLAS_NUM_THREADS: '2'
+      OMP_NUM_THREADS: '2'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -19,3 +22,10 @@ jobs:
       - run: python -m pip install requests==2.32.3 remotezip==0.12.3 numpy==2.2.6 scipy==1.15.3 h5py==3.14.0 scikit-learn==1.6.1
       - name: Acquire and evaluate measured radar
         run: python -u scripts/empirical_radar.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: measured-radar-comparison
+          path: empirical_results/
+          retention-days: 30
+          if-no-files-found: warn
