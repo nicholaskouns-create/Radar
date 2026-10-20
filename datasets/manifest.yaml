@@ -15,5 +15,6 @@ datasets:
     phase_preservation: unverified
   - id: radr
     source: https://huggingface.co/datasets/gtaxcenter/radr
-    status: pending
+    status: metadata_acquired_adc_absent
     label_type: robustness
+    acquisition_audit: research/2026-10-20-radr-acquisition-audit.md
