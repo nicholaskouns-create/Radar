@@ -2,12 +2,14 @@
 import io, json, re, html, hashlib, zipfile
 from pathlib import Path
 import requests
+import time
+from collections import OrderedDict
 from scipy.io import loadmat
 
 SOURCE='https://drive.google.com/uc?export=download&id=1OfqXXgoFg6xRYZkRqPJye4cQ29Fomh3l'
 class RangeFile(io.RawIOBase):
     def __init__(self,url,session):
-        self.url=url;self.session=session;self.pos=0;self.transferred=0
+        self.url=url;self.session=session;self.pos=0;self.transferred=0;self.cache=OrderedDict()
         r=session.get(url,headers={'Range':'bytes=0-0'},stream=True,timeout=60)
         if r.status_code!=206: r.close();raise RuntimeError('Server does not honor byte ranges: '+str(r.status_code))
         self.size=int(r.headers['Content-Range'].split('/')[-1]);r.close()
@@ -22,15 +24,35 @@ class RangeFile(io.RawIOBase):
         n=self.size-self.pos if n<0 else min(n,self.size-self.pos)
         if n<=0:return b''
         if n>64_000_000 or self.transferred+n>1_500_000_000:raise RuntimeError('Acquisition budget exceeded')
-        end=self.pos+n-1
-        with self.session.get(self.url,headers={'Range':f'bytes={self.pos}-{end}'},stream=True,timeout=60) as r:
-            if r.status_code!=206:raise RuntimeError('Range request not honored')
-            r.raise_for_status()
-            data=b''.join(r.iter_content(262144))
-        if len(data)!=n:raise RuntimeError('Truncated range')
-        self.pos+=n;self.transferred+=n
+        start=self.pos;end=start+n
+        blocks=[]
+        first=start//1048576;last=(end-1)//1048576
+        for block in range(first,last+1):
+            if block not in self.cache:
+                lo=block*1048576;hi=min(self.size,lo+1048576)-1
+                for attempt in range(3):
+                    try:
+                        with self.session.get(self.url,headers={'Range':f'bytes={lo}-{hi}'},stream=True,timeout=90) as r:
+                            if r.status_code!=206:
+                                raise RuntimeError('Range HTTP '+str(r.status_code))
+                            if r.headers.get('Content-Range','').split('/')[0]!=f'bytes {lo}-{hi}':
+                                raise RuntimeError('Incorrect content range')
+                            data=b''.join(r.iter_content(262144))
+                        if len(data)!=hi-lo+1:raise RuntimeError('Truncated range')
+                        break
+                    except (requests.RequestException,RuntimeError) as exc:
+                        print('RANGE_RETRY',attempt+1,str(exc),flush=True)
+                        if attempt==2:raise
+                        time.sleep(2**(attempt+1))
+                self.transferred+=len(data)
+                if self.transferred>1_500_000_000:raise RuntimeError('Acquisition budget exceeded')
+                self.cache[block]=data
+            self.cache.move_to_end(block)
+            blocks.append(self.cache[block])
+        data=b''.join(blocks)[start-first*1048576:end-first*1048576]
+        while len(self.cache)>8:self.cache.popitem(last=False)
+        self.pos=end
         return data
-
 
 import os, sys
 import numpy as np
