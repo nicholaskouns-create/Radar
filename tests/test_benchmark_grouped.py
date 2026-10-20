@@ -31,6 +31,7 @@ def test_group_isolation_and_residual_information():
     # Test equivalence geometrically, not via ROC on machine-epsilon differences.
     s = __import__("src.e47_radar.spectral", fromlist=["statistics"]).statistics(x, (2,))
     assert np.max(s["eta"]) - np.min(s["eta"]) < 1e-10
+    assert r["auc_occupancy"] == .5
     assert r["auc_residual"] > .99
     assert r["auc_joint_logistic"] > .99
     assert r["evidence"] == "unverified_dataset_provenance"
