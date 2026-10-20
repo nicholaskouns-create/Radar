@@ -16,18 +16,23 @@ jobs:
           python-version: '3.11'
       - name: Ingest versioned descriptive audit
         env:
+          RESEARCH_ENGINE_SECRET_KEY: ${{ secrets.RESEARCH_ENGINE_SECRET_KEY }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
           RESEARCH_ENGINE_SERVICE_ROLE_KEY: ${{ secrets.RESEARCH_ENGINE_SERVICE_ROLE_KEY }}
         run: |
           python - <<'PY'
           import os,hashlib,json,base64,urllib.request
-          key=os.environ.get('RESEARCH_ENGINE_SERVICE_ROLE_KEY','')
+          key=(os.environ.get('RESEARCH_ENGINE_SECRET_KEY') or os.environ.get('SUPABASE_SECRET_KEY') or os.environ.get('RESEARCH_ENGINE_SERVICE_ROLE_KEY',''))
           if not key:
-              print('BLOCKED: repository secret RESEARCH_ENGINE_SERVICE_ROLE_KEY not configured. No insecure fallback.')
+              print('BLOCKED: repository secret RESEARCH_ENGINE_SECRET_KEY not configured (SUPABASE_SECRET_KEY or legacy RESEARCH_ENGINE_SERVICE_ROLE_KEY also accepted). No insecure fallback.')
               raise SystemExit(2)
           artifact={'schema_version':'1.0','source':'ACICULA/mocap2radar',
                     'samples':14336,'measured_auc':None,'evidence_level':'real_iq_descriptive'}
+          artifact['workflow_commit']=os.environ['GITHUB_SHA']
+          artifact['workflow_run']=os.environ['GITHUB_RUN_ID']
+          artifact['workflow_attempt']=os.environ['GITHUB_RUN_ATTEMPT']
           raw=json.dumps(artifact,sort_keys=True).encode()
-          body={'run_id':'radar-acicula-iq-20261020','dataset_id':'acicula-iq-v3',
+          body={'run_id':'radar-acicula-audit-'+os.environ['GITHUB_RUN_ID']+'-'+os.environ['GITHUB_RUN_ATTEMPT'],'dataset_id':'acicula-iq-v3',
                 'producer':'Radar','algorithm':'iq-audit',
                 'algorithm_version':'680c359915d26dce5cd8bed92014619982c3aad5',
                 'evidence_level':'real_iq_descriptive','labels_verified':False,
@@ -36,7 +41,8 @@ jobs:
                 'artifact_base64':base64.b64encode(raw).decode()}
           url='https://gpkjvihkyectnenvnbng.supabase.co/functions/v1/research-engine-ingest'
           req=urllib.request.Request(url,data=json.dumps(body).encode(),
-              headers={'Authorization':'Bearer '+key,'Content-Type':'application/json'},method='POST')
+              headers={**({'apikey':key} if key.startswith('sb_secret_') else {'Authorization':'Bearer '+key}),
+                       'Content-Type':'application/json'},method='POST')
           with urllib.request.urlopen(req,timeout=35) as resp:
               output=json.load(resp)
           assert output.get('ok') is True

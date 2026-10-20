@@ -1,0 +1,3 @@
+[functions.research-engine-ingest]
+# The handler authenticates apikey against runtime secret keys.
+verify_jwt = false
