@@ -1,0 +1,36 @@
+name: Research engine contract
+on:
+  push:
+    paths:
+      - 'research_engine/**'
+      - 'tests/test_research_engine.py'
+      - '.github/workflows/research-engine.yml'
+  workflow_dispatch:
+  repository_dispatch:
+    types: [research-engine-validate]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install pytest
+      - run: python -m pytest tests/test_research_engine.py -q
+      - name: Export consumer contract
+        run: |
+          python - <<'PY'
+          import json
+          from research_engine.sources import SOURCES
+          with open('research-engine-contract.json','w') as f:
+              json.dump({'schema_version':'1.0','producer':'Radar','datasets':SOURCES},f,indent=2)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: research-engine-contract
+          path: research-engine-contract.json
+          retention-days: 30
