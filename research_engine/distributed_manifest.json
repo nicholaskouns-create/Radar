@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "authority": "Radar publishes integration contract; domain engines remain authoritative in their source repositories",
+  "registry": "https://gpkjvihkyectnenvnbng.supabase.co/functions/v1/research-engine-read",
+  "contract_commit": "46f696fd9479e4dcade7ffb0c79ac7978f6a9bf6",
+  "consumers": [
+    {
+      "repo": "E47-Kartekeya",
+      "role": "canonical_spectral",
+      "entry": "migration/python/city_spectral_engine_v2.py"
+    },
+    {
+      "repo": "nicholaskouns-create.github.io",
+      "role": "public_portal",
+      "entry": "research-engine.html"
+    },
+    {
+      "repo": "E47-Foundry-Lifetime-Intersection",
+      "role": "foundry_spectral",
+      "entry": "python/spectral_engine.py"
+    },
+    {
+      "repo": "E47-Electroweak-Identities",
+      "role": "electroweak_model",
+      "entry": "README.md"
+    },
+    {
+      "repo": "auth-kernel",
+      "role": "authorization_research",
+      "entry": "README.md"
+    },
+    {
+      "repo": "bi-a7-semimetal-proofs",
+      "role": "bismuth_model",
+      "entry": "app/index.html"
+    },
+    {
+      "repo": "Time",
+      "role": "temporal_quantum_graph",
+      "entry": "engine/index.js"
+    },
+    {
+      "repo": "Genesis",
+      "role": "benchmark",
+      "entry": "README.md"
+    }
+  ],
+  "producer": {
+    "repo": "Radar",
+    "role": "evidence_registry_and_acquisition",
+    "entry": "research_engine/registry.py"
+  },
+  "boundary": "Shared validation and immutable workflow receipts do not imply inter-engine execution, native test parity, or privileged ingestion."
+}
