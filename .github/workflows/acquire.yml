@@ -1,0 +1,28 @@
+name: Bounded measured radar acquisition
+on:
+  push:
+    paths:
+      - '.github/workflows/acquire.yml'
+      - 'scripts/acquire_radr_exemplar.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install h5py numpy
+      - name: Download checksum-verified public HDF5 exemplar
+        run: python scripts/acquire_radr_exemplar.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: measured-radr-acquisition-report
+          path: acquisition_report.json
+          if-no-files-found: warn
+          retention-days: 30
