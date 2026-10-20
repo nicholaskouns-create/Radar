@@ -14,7 +14,7 @@ from sklearn.preprocessing import StandardScaler
 from src.e47_radar.spectral import statistics
 
 
-def evaluate(x, y, groups, *, depth=2, seed=47, test_size=.3):
+def evaluate(x, y, groups, *, depth=2, seed=47, test_size=.3, occupancy_tie_atol=1e-10):
     """Use recording IDs for a held-out test; directions fitted on train only."""
     x = np.asarray(x)
     y = np.asarray(y)
@@ -40,7 +40,13 @@ def evaluate(x, y, groups, *, depth=2, seed=47, test_size=.3):
     joint.fit(features[train], y[train])
     # Residual alone learns the sign from the TRAIN portion.
     residual_dir = 1. if np.mean(features[train][y[train] == 1, 1]) >= np.mean(features[train][y[train] == 0, 1]) else -1.
+    # Collapse sub-tolerance occupancy differences that otherwise create spurious AUC.
+    # The tolerance is prespecified and is not inferred from the labels.
+    occupancy_test = direction * features[test, 0]
+    if np.ptp(occupancy_test) <= occupancy_tie_atol:
+        occupancy_test = np.full_like(occupancy_test, np.mean(occupancy_test))
     return {
+        "occupancy_tie_atol": occupancy_tie_atol,
         "evidence": "unverified_dataset_provenance",
         "depth": depth, "seed": seed,
         "split": "held_out_recording_groups",
@@ -48,7 +54,7 @@ def evaluate(x, y, groups, *, depth=2, seed=47, test_size=.3):
         "n_train_groups": len(np.unique(groups[train])),
         "n_test_groups": len(np.unique(groups[test])),
         "group_overlap_count": len(set(groups[train]) & set(groups[test])),
-        "auc_occupancy": float(roc_auc_score(y[test], direction * features[test, 0])),
+        "auc_occupancy": float(roc_auc_score(y[test], occupancy_test)),
         "auc_residual": float(roc_auc_score(y[test], residual_dir * features[test, 1])),
         "auc_joint_logistic": float(roc_auc_score(y[test], joint.predict_proba(features[test])[:, 1])),
         "not_performed": ["CA-CFAR", "Doppler threshold", "phase provenance validation", "uncertainty interval"],
