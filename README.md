@@ -18,7 +18,12 @@ No raw archives, API keys, or credentials in Git. Dataset downloads require lice
 ```bash
 python -m pip install -r requirements.txt
 python -m pytest -q
-python -m scripts.benchmark_npz --input data/labeled_complex_125.npz --output results/run.json
+python -m scripts.benchmark_grouped --input data/labeled_complex_125_grouped.npz --output results/run.json
 ```
 
-NPZ requires complex x of shape (N,125) and binary y of shape (N,). The mapping from measured ADC to these 125 complex features must be predeclared, label-blind, and physically justified. Arbitrary reshaping is not a validated encoding. NPZ benchmarks do not replace source-specific CA-CFAR and Doppler baselines on original radar cubes. Supabase stores provenance and small result metadata, not raw ADC.
+Grouped NPZ requires complex x of shape (N,125), binary y of shape (N,), and recording identifiers groups of shape (N,). The older benchmark_npz.py uses a random split and is demonstration-only, not acceptable for measured claims. The mapping from measured ADC to these 125 complex features must be predeclared, label-blind, and physically justified. Arbitrary reshaping is not a validated encoding. NPZ benchmarks do not replace source-specific CA-CFAR and Doppler baselines on original radar cubes. Supabase stores provenance and small result metadata, not raw ADC.
+## Acquisition gate status (2026-10-20)
+- Rad-R synchronized metadata exemplar downloaded and checksum verified, but no ADC/IQ samples present. See `research/2026-10-20-radr-acquisition-audit.md`.
+- Strict Gao MATLAB ADC validator: `src/e47_radar/gao.py`. It rejects real-valued, malformed, nonfinite, or ambiguous frames, preserves complex samples and records SHA-256. No source-specific labeled Gao frame has yet been obtained and passed this gate.
+- `src/e47_radar/adc.py` provides a phase-equivariant *prototype* 5×5×5 encoding and frame-level range/CFAR/Doppler proxy scores. No measured E47 detector ROC is available.
+- Gates 2–5 cannot be empirically completed before authentic labeled complex ADC passes Gate 1. Synthetic regression tests are not measured evidence.
