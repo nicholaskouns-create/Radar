@@ -1,0 +1,19 @@
+# Acquisition metadata only. No raw recordings committed.
+datasets:
+  - id: radial
+    source: https://github.com/valeoai/RADIal
+    status: pending
+  - id: gao_raw_adc
+    source: https://github.com/Xiangyu-Gao/Raw_ADC_radar_dataset_for_automotive_object_detection
+    status: pending
+  - id: cruw
+    source: https://www.cruwdataset.org/download
+    status: pending
+  - id: carrada
+    source: https://arthurouaknine.github.io/codeanddata/carrada
+    status: pending
+    phase_preservation: unverified
+  - id: radr
+    source: https://huggingface.co/datasets/gtaxcenter/radr
+    status: pending
+    label_type: robustness
