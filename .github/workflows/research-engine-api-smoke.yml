@@ -1,0 +1,31 @@
+name: Research engine public API smoke
+on:
+  push:
+    paths:
+      - '.github/workflows/research-engine-api-smoke.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Public GET and write rejection
+        run: |
+          python - <<'PY'
+          import json, urllib.request, urllib.error
+          url='https://gpkjvihkyectnenvnbng.supabase.co/functions/v1/research-engine-read'
+          with urllib.request.urlopen(url,timeout=25) as r:
+              assert r.status==200
+              j=json.load(r)
+          assert j['schema_version']=='1.0' and isinstance(j['runs'],list)
+          assert any(x['run_id']=='radar-acicula-iq-20261020' for x in j['runs'])
+          assert all('result' not in x and 'artifact_url' not in x for x in j['runs'])
+          try:
+              urllib.request.urlopen(urllib.request.Request(url,data=b'{}',method='POST'),timeout=25)
+              raise AssertionError('Public endpoint accepted a write')
+          except urllib.error.HTTPError as e:
+              assert e.code==405,e.code
+          print('Public API smoke PASS; runs:',len(j['runs']))
+          PY
