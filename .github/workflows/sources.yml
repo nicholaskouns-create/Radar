@@ -1,0 +1,25 @@
+name: Public radar source availability
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 15 * * 1'
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check authoritative dataset source endpoints
+        run: python scripts/check_sources.py > source_status.json
+      - name: Display source reachability (not acquisition)
+        run: cat source_status.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: radar-source-status
+          path: source_status.json
+          retention-days: 14
