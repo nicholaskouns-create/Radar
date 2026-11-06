@@ -27,3 +27,5 @@ Grouped NPZ requires complex x of shape (N,125), binary y of shape (N,), and rec
 - Strict Gao MATLAB ADC validator: `src/e47_radar/gao.py`. It rejects real-valued, malformed, nonfinite, or ambiguous frames, preserves complex samples and records SHA-256. No source-specific labeled Gao frame has yet been obtained and passed this gate.
 - `src/e47_radar/adc.py` provides a phase-equivariant *prototype* 5×5×5 encoding and frame-level range/CFAR/Doppler proxy scores. No measured E47 detector ROC is available.
 - Gates 2–5 cannot be empirically completed before authentic labeled complex ADC passes Gate 1. Synthetic regression tests are not measured evidence.
+
+[The E₄₇ spectral kernel · formalism and verification](e47-spectral-kernel/README.md)
