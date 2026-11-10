@@ -1,5 +1,8 @@
 # Radar
 
+> **Current license:** [All Rights Reserved](LICENSE) for owned original material. No new reuse permission. Earlier licenses and third-party/public-domain rights remain unaffected.
+
+
 E47 × public radar reproducible benchmark. **Exact algebra, synthetic experiments, and measured-data results are separate evidence classes.** No measured AUC is claimed until real phase-preserving data and labels have been processed.
 
 ## Fixed formalism
