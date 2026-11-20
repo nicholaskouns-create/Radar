@@ -1,0 +1,2 @@
+ARCHIVE_BYTES 15798165115
+{"recording": "Automotive/2019_04_09_bms1000", "frame": "Automotive/2019_04_09_bms1000/radar_raw_frame/000003.mat", "labels": "Automotive/2019_04_09_bms1000/text_labels/0000000003.csv", "label_sha256": "f9b4729a54f01293632896a7dd2129371823edbf6b03feeb7890d08a58bd3ab9", "annotation_rows": 1, "sha256": "43f7dfb36e826b9b9d737923559a7a728de5e8fcbb8599ece1f28b6c498df58e", "variable": "adcData", "shape": [128, 255, 4, 2], "dtype": "complex128", "phase_preserved": true, "tx_handling": "separate", "label_status": "not_verified"}

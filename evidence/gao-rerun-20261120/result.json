@@ -1,0 +1,546 @@
+{
+  "status": "executed_on_measured_complex_adc",
+  "evidence": "source_annotated_range_cell_pilot",
+  "code_commit": null,
+  "workflow_run": null,
+  "source": "https://drive.google.com/uc?export=download&id=1OfqXXgoFg6xRYZkRqPJye4cQ29Fomh3l",
+  "source_citation": "Gao et al., DOI 10.21227/xm40-jx59; RAMP-CNN DOI 10.1109/JSEN.2020.3036047",
+  "recordings": 22,
+  "frames": 66,
+  "transferred_bytes": 141876859,
+  "sample_rate_hz": 4000000.0,
+  "slope_hz_s": 21000000000000.0,
+  "range_grid_m": 0.22305986458333332,
+  "protocol": "research/gao_empirical_protocol.md",
+  "split_manifest": [
+    {
+      "recording": "Automotive/2019_04_09_bms1000",
+      "split": "train",
+      "frames": [
+        226,
+        449,
+        672
+      ]
+    },
+    {
+      "recording": "Automotive/2019_04_09_cms1000",
+      "split": "train",
+      "frames": [
+        225,
+        449,
+        673
+      ]
+    },
+    {
+      "recording": "Automotive/2019_04_09_css1000",
+      "split": "train",
+      "frames": [
+        226,
+        449,
+        672
+      ]
+    },
+    {
+      "recording": "Automotive/2019_04_09_pms1000",
+      "split": "train",
+      "frames": [
+        226,
+        450,
+        673
+      ]
+    },
+    {
+      "recording": "Automotive/2019_04_09_pms2000",
+      "split": "train",
+      "frames": [
+        226,
+        450,
+        673
+      ]
+    },
+    {
+      "recording": "Automotive/2019_04_09_pms3000",
+      "split": "train",
+      "frames": [
+        226,
+        450,
+        673
+      ]
+    },
+    {
+      "recording": "Automotive/2019_04_30_cm1s000",
+      "split": "train",
+      "frames": [
+        226,
+        450,
+        674
+      ]
+    },
+    {
+      "recording": "Automotive/2019_04_30_mlms000",
+      "split": "train",
+      "frames": [
+        227,
+        451,
+        675
+      ]
+    },
+    {
+      "recording": "Automotive/2019_04_30_mlms001",
+      "split": "train",
+      "frames": [
+        227,
+        451,
+        675
+      ]
+    },
+    {
+      "recording": "Automotive/2019_04_30_pbms002",
+      "split": "train",
+      "frames": [
+        227,
+        451,
+        675
+      ]
+    },
+    {
+      "recording": "Automotive/2019_04_30_pbss000",
+      "split": "train",
+      "frames": [
+        227,
+        451,
+        675
+      ]
+    },
+    {
+      "recording": "Automotive/2019_04_30_pcms001",
+      "split": "train",
+      "frames": [
+        227,
+        451,
+        675
+      ]
+    },
+    {
+      "recording": "Automotive/2019_05_09_bm1s007",
+      "split": "validation",
+      "frames": [
+        227,
+        451,
+        675
+      ]
+    },
+    {
+      "recording": "Automotive/2019_05_09_cm1s003",
+      "split": "validation",
+      "frames": [
+        227,
+        451,
+        675
+      ]
+    },
+    {
+      "recording": "Automotive/2019_05_09_mlms003",
+      "split": "validation",
+      "frames": [
+        227,
+        451,
+        675
+      ]
+    },
+    {
+      "recording": "Automotive/2019_05_09_pbms004",
+      "split": "validation",
+      "frames": [
+        227,
+        451,
+        675
+      ]
+    },
+    {
+      "recording": "Automotive/2019_05_09_pcms002",
+      "split": "validation",
+      "frames": [
+        226,
+        450,
+        674
+      ]
+    },
+    {
+      "recording": "Automotive/2019_05_29_bcms000",
+      "split": "test",
+      "frames": [
+        227,
+        451,
+        675
+      ]
+    },
+    {
+      "recording": "Automotive/2019_05_29_cm1s014",
+      "split": "test",
+      "frames": [
+        227,
+        451,
+        675
+      ]
+    },
+    {
+      "recording": "Automotive/2019_05_29_mlms006",
+      "split": "test",
+      "frames": [
+        227,
+        451,
+        675
+      ]
+    },
+    {
+      "recording": "Automotive/2019_05_29_pbms007",
+      "split": "test",
+      "frames": [
+        227,
+        451,
+        675
+      ]
+    },
+    {
+      "recording": "Automotive/2019_05_29_pcms005",
+      "split": "test",
+      "frames": [
+        227,
+        451,
+        675
+      ]
+    }
+  ],
+  "results": [
+    {
+      "added_noise_power_fraction": 0.0,
+      "train_cells": 3325,
+      "validation_cells": 1129,
+      "test_cells": 1370,
+      "test_positive_cells": 57,
+      "test_recordings": 5,
+      "scores": {
+        "matched_filter": {
+          "auc": 0.8100105557114415,
+          "average_precision": 0.43866227530689683,
+          "threshold_from_validation": 12.8338292354033,
+          "test_range_cell_tpr": 0.0,
+          "test_annotation_negative_fpr": 0.0007616146230007616
+        },
+        "ca_cfar": {
+          "auc": 0.6420277655295894,
+          "average_precision": 0.25858809406060185,
+          "threshold_from_validation": 1.5962647486453017,
+          "test_range_cell_tpr": 0.22807017543859648,
+          "test_annotation_negative_fpr": 0.015232292460015232
+        },
+        "e47_occupancy": {
+          "auc": 0.4767640731684504,
+          "average_precision": 0.03757240046714626,
+          "threshold_from_validation": -0.26320342362562077,
+          "test_range_cell_tpr": 0.05263157894736842,
+          "test_annotation_negative_fpr": 0.12947448591012947
+        },
+        "e47_residual2": {
+          "auc": 0.4943546986277575,
+          "average_precision": 0.0390778781254774,
+          "threshold_from_validation": 0.3894439331979703,
+          "test_range_cell_tpr": 0.017543859649122806,
+          "test_annotation_negative_fpr": 0.07311500380807312
+        },
+        "conventional_logistic": {
+          "auc": 0.8037439371467511,
+          "average_precision": 0.4310217377909124,
+          "threshold_from_validation": 0.6924304462988529,
+          "test_range_cell_tpr": 0.017543859649122806,
+          "test_annotation_negative_fpr": 0.0007616146230007616
+        },
+        "e47_joint": {
+          "auc": 0.5290950147646344,
+          "average_precision": 0.042744242991642034,
+          "threshold_from_validation": 0.09113481973074165,
+          "test_range_cell_tpr": 0.017543859649122806,
+          "test_annotation_negative_fpr": 0.035034272658035034
+        },
+        "conventional_plus_e47": {
+          "auc": 0.80272845098275,
+          "average_precision": 0.4327579997770622,
+          "threshold_from_validation": 0.6880797514296642,
+          "test_range_cell_tpr": 0.017543859649122806,
+          "test_annotation_negative_fpr": 0.0007616146230007616
+        }
+      },
+      "incremental_auc": -0.0010154861640010449,
+      "paired_recording_bootstrap_ci95": [
+        -0.00352006436689134,
+        0.0030864197530864335
+      ],
+      "bootstrap_draws": 1000,
+      "per_test_recording_auc": {
+        "Automotive/2019_05_29_bcms000": {
+          "matched_filter": 0.9710526315789474,
+          "ca_cfar": 0.887280701754386,
+          "e47_occupancy": 0.5,
+          "e47_residual2": 0.5221491228070175,
+          "conventional_logistic": 0.9701754385964914,
+          "e47_joint": 0.531359649122807,
+          "conventional_plus_e47": 0.9640350877192982
+        },
+        "Automotive/2019_05_29_cm1s014": {
+          "matched_filter": 0.9812925170068028,
+          "ca_cfar": 0.766156462585034,
+          "e47_occupancy": 0.7049319727891157,
+          "e47_residual2": 0.7380952380952381,
+          "conventional_logistic": 0.9744897959183674,
+          "e47_joint": 0.7882653061224489,
+          "conventional_plus_e47": 0.9795918367346939
+        },
+        "Automotive/2019_05_29_mlms006": {
+          "matched_filter": 0.7000968992248062,
+          "ca_cfar": 0.7834302325581396,
+          "e47_occupancy": 0.42030038759689925,
+          "e47_residual2": 0.43495639534883723,
+          "conventional_logistic": 0.7073643410852712,
+          "e47_joint": 0.4618459302325581,
+          "conventional_plus_e47": 0.7030038759689923
+        },
+        "Automotive/2019_05_29_pbms007": {
+          "matched_filter": 0.8176603773584906,
+          "ca_cfar": 0.44196226415094336,
+          "e47_occupancy": 0.4532075471698113,
+          "e47_residual2": 0.46279245283018866,
+          "conventional_logistic": 0.7972830188679244,
+          "e47_joint": 0.48724528301886794,
+          "conventional_plus_e47": 0.796377358490566
+        },
+        "Automotive/2019_05_29_pcms005": {
+          "auc": null,
+          "reason": "one class"
+        }
+      }
+    },
+    {
+      "added_noise_power_fraction": 0.1,
+      "train_cells": 3325,
+      "validation_cells": 1129,
+      "test_cells": 1370,
+      "test_positive_cells": 57,
+      "test_recordings": 5,
+      "scores": {
+        "matched_filter": {
+          "auc": 0.7822450261220454,
+          "average_precision": 0.4096555186908893,
+          "threshold_from_validation": 13.01946958585939,
+          "test_range_cell_tpr": 0.0,
+          "test_annotation_negative_fpr": 0.0
+        },
+        "ca_cfar": {
+          "auc": 0.6331556232546331,
+          "average_precision": 0.23388185234064002,
+          "threshold_from_validation": 1.3963296022911968,
+          "test_range_cell_tpr": 0.21052631578947367,
+          "test_annotation_negative_fpr": 0.016755521706016754
+        },
+        "e47_occupancy": {
+          "auc": 0.47893534292700524,
+          "average_precision": 0.03776832719403741,
+          "threshold_from_validation": -0.27861314816151506,
+          "test_range_cell_tpr": 0.05263157894736842,
+          "test_annotation_negative_fpr": 0.12718964204112718
+        },
+        "e47_residual2": {
+          "auc": 0.4933525741238091,
+          "average_precision": 0.039089148054483915,
+          "threshold_from_validation": 0.3831049222474309,
+          "test_range_cell_tpr": 0.017543859649122806,
+          "test_annotation_negative_fpr": 0.06930693069306931
+        },
+        "conventional_logistic": {
+          "auc": 0.7671997969027672,
+          "average_precision": 0.39080429168895103,
+          "threshold_from_validation": 0.6536596591184782,
+          "test_range_cell_tpr": 0.0,
+          "test_annotation_negative_fpr": 0.0007616146230007616
+        },
+        "e47_joint": {
+          "auc": 0.5341724455846394,
+          "average_precision": 0.043504339390676855,
+          "threshold_from_validation": 0.08884366567176326,
+          "test_range_cell_tpr": 0.017543859649122806,
+          "test_annotation_negative_fpr": 0.03274942878903275
+        },
+        "conventional_plus_e47": {
+          "auc": 0.7677877099450835,
+          "average_precision": 0.38876709938355847,
+          "threshold_from_validation": 0.6409293097269245,
+          "test_range_cell_tpr": 0.0,
+          "test_annotation_negative_fpr": 0.0007616146230007616
+        }
+      },
+      "incremental_auc": 0.0005879130423163126,
+      "paired_recording_bootstrap_ci95": [
+        -0.003156116642958673,
+        0.00444576170717248
+      ],
+      "bootstrap_draws": 1000,
+      "per_test_recording_auc": {
+        "Automotive/2019_05_29_bcms000": {
+          "matched_filter": 0.9671052631578947,
+          "ca_cfar": 0.9293859649122806,
+          "e47_occupancy": 0.49956140350877193,
+          "e47_residual2": 0.5138157894736842,
+          "conventional_logistic": 0.9692982456140351,
+          "e47_joint": 0.5228070175438596,
+          "conventional_plus_e47": 0.9644736842105263
+        },
+        "Automotive/2019_05_29_cm1s014": {
+          "matched_filter": 0.9608843537414966,
+          "ca_cfar": 0.7653061224489796,
+          "e47_occupancy": 0.6857993197278911,
+          "e47_residual2": 0.7053571428571429,
+          "conventional_logistic": 0.9362244897959184,
+          "e47_joint": 0.7062074829931974,
+          "conventional_plus_e47": 0.9413265306122449
+        },
+        "Automotive/2019_05_29_mlms006": {
+          "matched_filter": 0.6516472868217055,
+          "ca_cfar": 0.7034883720930233,
+          "e47_occupancy": 0.41690891472868213,
+          "e47_residual2": 0.43701550387596894,
+          "conventional_logistic": 0.6637596899224806,
+          "e47_joint": 0.47662306201550386,
+          "conventional_plus_e47": 0.663032945736434
+        },
+        "Automotive/2019_05_29_pbms007": {
+          "matched_filter": 0.7532075471698114,
+          "ca_cfar": 0.45177358490566044,
+          "e47_occupancy": 0.46513207547169805,
+          "e47_residual2": 0.4665660377358491,
+          "conventional_logistic": 0.7142641509433962,
+          "e47_joint": 0.49811320754716976,
+          "conventional_plus_e47": 0.7144150943396227
+        },
+        "Automotive/2019_05_29_pcms005": {
+          "auc": null,
+          "reason": "one class"
+        }
+      }
+    },
+    {
+      "added_noise_power_fraction": 1.0,
+      "train_cells": 3325,
+      "validation_cells": 1129,
+      "test_cells": 1370,
+      "test_positive_cells": 57,
+      "test_recordings": 5,
+      "scores": {
+        "matched_filter": {
+          "auc": 0.7028233187691239,
+          "average_precision": 0.22534677820061544,
+          "threshold_from_validation": 13.592297913157944,
+          "test_range_cell_tpr": 0.0,
+          "test_annotation_negative_fpr": 0.0
+        },
+        "ca_cfar": {
+          "auc": 0.6060848999879744,
+          "average_precision": 0.09812865391860469,
+          "threshold_from_validation": 1.1498034865542828,
+          "test_range_cell_tpr": 0.14035087719298245,
+          "test_annotation_negative_fpr": 0.03427265803503427
+        },
+        "e47_occupancy": {
+          "auc": 0.45873919375743244,
+          "average_precision": 0.03653696644194077,
+          "threshold_from_validation": -0.32093094610723333,
+          "test_range_cell_tpr": 0.03508771929824561,
+          "test_annotation_negative_fpr": 0.11043412033511044
+        },
+        "e47_residual2": {
+          "auc": 0.47681751980866105,
+          "average_precision": 0.038240838045897785,
+          "threshold_from_validation": 0.3615616679746426,
+          "test_range_cell_tpr": 0.017543859649122806,
+          "test_annotation_negative_fpr": 0.06092916984006093
+        },
+        "conventional_logistic": {
+          "auc": 0.6630322951323472,
+          "average_precision": 0.1460313794378114,
+          "threshold_from_validation": 0.31345409163558957,
+          "test_range_cell_tpr": 0.017543859649122806,
+          "test_annotation_negative_fpr": 0.0007616146230007616
+        },
+        "e47_joint": {
+          "auc": 0.5199021926484146,
+          "average_precision": 0.04344938746156125,
+          "threshold_from_validation": 0.0941248991851937,
+          "test_range_cell_tpr": 0.017543859649122806,
+          "test_annotation_negative_fpr": 0.031226199543031227
+        },
+        "conventional_plus_e47": {
+          "auc": 0.6594112852580805,
+          "average_precision": 0.13832054124442322,
+          "threshold_from_validation": 0.30632577268060485,
+          "test_range_cell_tpr": 0.017543859649122806,
+          "test_annotation_negative_fpr": 0.0015232292460015233
+        }
+      },
+      "incremental_auc": -0.003621009874266723,
+      "paired_recording_bootstrap_ci95": [
+        -0.00871999999999995,
+        0.0027415530527563625
+      ],
+      "bootstrap_draws": 1000,
+      "per_test_recording_auc": {
+        "Automotive/2019_05_29_bcms000": {
+          "matched_filter": 0.6991228070175439,
+          "ca_cfar": 0.6482456140350876,
+          "e47_occupancy": 0.5074561403508773,
+          "e47_residual2": 0.5037280701754385,
+          "conventional_logistic": 0.6793859649122808,
+          "e47_joint": 0.49188596491228076,
+          "conventional_plus_e47": 0.6719298245614035
+        },
+        "Automotive/2019_05_29_cm1s014": {
+          "matched_filter": 0.8069727891156463,
+          "ca_cfar": 0.7423469387755103,
+          "e47_occupancy": 0.6130952380952381,
+          "e47_residual2": 0.6624149659863946,
+          "conventional_logistic": 0.7763605442176871,
+          "e47_joint": 0.6645408163265306,
+          "conventional_plus_e47": 0.7925170068027211
+        },
+        "Automotive/2019_05_29_mlms006": {
+          "matched_filter": 0.5697674418604652,
+          "ca_cfar": 0.6715116279069768,
+          "e47_occupancy": 0.35016957364341084,
+          "e47_residual2": 0.38311531007751937,
+          "conventional_logistic": 0.623546511627907,
+          "e47_joint": 0.4825581395348837,
+          "conventional_plus_e47": 0.6143410852713178
+        },
+        "Automotive/2019_05_29_pbms007": {
+          "matched_filter": 0.7480754716981132,
+          "ca_cfar": 0.5415849056603773,
+          "e47_occupancy": 0.476377358490566,
+          "e47_residual2": 0.48777358490566036,
+          "conventional_logistic": 0.6546415094339623,
+          "e47_joint": 0.5272452830188679,
+          "conventional_plus_e47": 0.6523773584905661
+        },
+        "Automotive/2019_05_29_pcms005": {
+          "auc": null,
+          "reason": "one class"
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "source coordinate annotations, no independent calibration certificate",
+    "annotation-negative cells may contain unlabeled reflectors",
+    "range-cell classification, not object-level detection",
+    "no radial velocity truth",
+    "added-noise ratios are not measured target SNR",
+    "five held-out test recordings"
+  ]
+}

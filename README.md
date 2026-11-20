@@ -5,6 +5,10 @@
 
 E47 × public radar reproducible benchmark. **Exact algebra, synthetic experiments, and measured-data results are separate evidence classes.** No measured AUC is claimed until real phase-preserving data and labels have been processed.
 
+## Measured Gao pilot (2026-11-20)
+
+The [fresh reproduction](evidence/gao-rerun-20261120/README.md) processed 66 annotated complex ADC frames across 22 recordings. On the held-out date with no injected noise, conventional AUC was 0.803744 and conventional plus E47 AUC was 0.802728. The recording-bootstrap interval for the difference included zero. The earlier acquisition notes below record the status at that time.
+
 ## Fixed formalism
 H = V₂⊗³ (dim 125); C = J_total²; K = (C−6I)(C−30I); P = P₆+P₃₀ (rank 47); Γ = I−K²/99144. Occupancy η(x)=||Px||²/||x||². Complement residual rₙ(x)=||(I−P)Γⁿx||²/||x||².
 

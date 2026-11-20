@@ -1,0 +1,662 @@
+[
+  {
+    "recording": "Automotive/2019_04_09_bms1000",
+    "frame": 226,
+    "raw_path": "Automotive/2019_04_09_bms1000/radar_raw_frame/000226.mat",
+    "label_path": "Automotive/2019_04_09_bms1000/text_labels/0000000226.csv",
+    "raw_sha256": "ca5ca4c7785ab949d6353460f81e4a28cc12875190f08ac235bb4755b7c9fffc",
+    "label_sha256": "62853424738f35d9f458e28f9f966ab1fc2b5f39ac3d9bf62dfc1bbd39bdfcae",
+    "raw_bytes": 1044688,
+    "targets": 1
+  },
+  {
+    "recording": "Automotive/2019_04_09_bms1000",
+    "frame": 449,
+    "raw_path": "Automotive/2019_04_09_bms1000/radar_raw_frame/000449.mat",
+    "label_path": "Automotive/2019_04_09_bms1000/text_labels/0000000449.csv",
+    "raw_sha256": "c664ba0d0ad0e168b3340e8b9d8d8d4313d15fcee3690d6f0026c9aab78c5280",
+    "label_sha256": "c41978a8fc52ca09fed695412f26b4c70cf54ed16699ac8345e456ac1f090a03",
+    "raw_bytes": 1044688,
+    "targets": 1
+  },
+  {
+    "recording": "Automotive/2019_04_09_bms1000",
+    "frame": 672,
+    "raw_path": "Automotive/2019_04_09_bms1000/radar_raw_frame/000672.mat",
+    "label_path": "Automotive/2019_04_09_bms1000/text_labels/0000000672.csv",
+    "raw_sha256": "07e48a88e89c1db304cd9135df869b47f0de8073f29eb6a11fcd49615ba7b0d2",
+    "label_sha256": "3baeed9c2f40bd1633ded7da70085c1e441c9ac1332029d87e75bdc3f1a9a040",
+    "raw_bytes": 1044688,
+    "targets": 1
+  },
+  {
+    "recording": "Automotive/2019_04_09_cms1000",
+    "frame": 225,
+    "raw_path": "Automotive/2019_04_09_cms1000/radar_raw_frame/000225.mat",
+    "label_path": "Automotive/2019_04_09_cms1000/text_labels/0000000225.csv",
+    "raw_sha256": "b0005bda6cd673d2c0056757eb5cc5037fefdb8047237a3eee3e8f8dc6c2c7fe",
+    "label_sha256": "cec77a2c1cdfb649ecde042de0457fe419d19c35e3302efd0127c201ae4359f3",
+    "raw_bytes": 1044688,
+    "targets": 1
+  },
+  {
+    "recording": "Automotive/2019_04_09_cms1000",
+    "frame": 449,
+    "raw_path": "Automotive/2019_04_09_cms1000/radar_raw_frame/000449.mat",
+    "label_path": "Automotive/2019_04_09_cms1000/text_labels/0000000449.csv",
+    "raw_sha256": "134e54d56ab64fd6bf7a2955b1f4c48d78a763797edcf863239fb9d0a356ebfb",
+    "label_sha256": "667dfdd877c4b7c9b6921ab193383e64484e8c416dde40a668b98f6302c684cd",
+    "raw_bytes": 1044688,
+    "targets": 1
+  },
+  {
+    "recording": "Automotive/2019_04_09_cms1000",
+    "frame": 673,
+    "raw_path": "Automotive/2019_04_09_cms1000/radar_raw_frame/000673.mat",
+    "label_path": "Automotive/2019_04_09_cms1000/text_labels/0000000673.csv",
+    "raw_sha256": "50a8f691de74607ff82342d3ec7be1166b95f260c97f259cf03d23e20ac8d8a7",
+    "label_sha256": "971addd1671243ea0a710ea9108656213652f0529965f4e099f64ea53bdb6dbd",
+    "raw_bytes": 1044688,
+    "targets": 1
+  },
+  {
+    "recording": "Automotive/2019_04_09_css1000",
+    "frame": 226,
+    "raw_path": "Automotive/2019_04_09_css1000/radar_raw_frame/000226.mat",
+    "label_path": "Automotive/2019_04_09_css1000/text_labels/0000000226.csv",
+    "raw_sha256": "3b491054190ac86e366db87fe7ad50783c648d7e06e11373c54ae622a284b1ec",
+    "label_sha256": "04c8a7051be0ecf53dac21df312dbd1179fad64530a73ae2adaecc4f888dd214",
+    "raw_bytes": 1044688,
+    "targets": 1
+  },
+  {
+    "recording": "Automotive/2019_04_09_css1000",
+    "frame": 449,
+    "raw_path": "Automotive/2019_04_09_css1000/radar_raw_frame/000449.mat",
+    "label_path": "Automotive/2019_04_09_css1000/text_labels/0000000449.csv",
+    "raw_sha256": "7d0b05e5ad9484a32bd14ca082885473053bdeb734e3a7fc4e670ab510fca681",
+    "label_sha256": "9578b03052231eec097391a83e46f7065ed68229e302914b6388e57b8071eef7",
+    "raw_bytes": 1044688,
+    "targets": 1
+  },
+  {
+    "recording": "Automotive/2019_04_09_css1000",
+    "frame": 672,
+    "raw_path": "Automotive/2019_04_09_css1000/radar_raw_frame/000672.mat",
+    "label_path": "Automotive/2019_04_09_css1000/text_labels/0000000672.csv",
+    "raw_sha256": "576b8d26c71e3829e897ff8858ce90646bdd0e5d852ced552f243f27191786df",
+    "label_sha256": "93641b75609e5a20666d9d342c81dee53cb676802dc342686bbd763a19ba64d7",
+    "raw_bytes": 1044688,
+    "targets": 1
+  },
+  {
+    "recording": "Automotive/2019_04_09_pms1000",
+    "frame": 226,
+    "raw_path": "Automotive/2019_04_09_pms1000/radar_raw_frame/000226.mat",
+    "label_path": "Automotive/2019_04_09_pms1000/text_labels/0000000226.csv",
+    "raw_sha256": "8768117e30b884cb3974662597cba4e2ad489805e2418ad6977b55a205a996fd",
+    "label_sha256": "1b3e529a76b50f9203ae796a8638f75e65585989c7b87fe34656983a265fb255",
+    "raw_bytes": 1044688,
+    "targets": 1
+  },
+  {
+    "recording": "Automotive/2019_04_09_pms1000",
+    "frame": 450,
+    "raw_path": "Automotive/2019_04_09_pms1000/radar_raw_frame/000450.mat",
+    "label_path": "Automotive/2019_04_09_pms1000/text_labels/0000000450.csv",
+    "raw_sha256": "c588edd533cc5f3ee7bce505dd115c38f866f9847da0964a0515af597ae5e8d9",
+    "label_sha256": "fd8297c7d1402438da4595c6e94859e125f05dd6b3dc1c7e1abc26415290ab46",
+    "raw_bytes": 1044688,
+    "targets": 1
+  },
+  {
+    "recording": "Automotive/2019_04_09_pms1000",
+    "frame": 673,
+    "raw_path": "Automotive/2019_04_09_pms1000/radar_raw_frame/000673.mat",
+    "label_path": "Automotive/2019_04_09_pms1000/text_labels/0000000673.csv",
+    "raw_sha256": "457ce11205bbe167067b90fff5b624b2ce442bbdcc2b4525252aef17e19e2044",
+    "label_sha256": "6e85d908c14b9db5b046f73a9b52f1b2da30a8d2fa56036da07383ef00087ae0",
+    "raw_bytes": 1044688,
+    "targets": 1
+  },
+  {
+    "recording": "Automotive/2019_04_09_pms2000",
+    "frame": 226,
+    "raw_path": "Automotive/2019_04_09_pms2000/radar_raw_frame/000226.mat",
+    "label_path": "Automotive/2019_04_09_pms2000/text_labels/0000000226.csv",
+    "raw_sha256": "3741bc6d2e62ce3cc5413a7b99733a24ddd667139b82f0da51f2e44affa50d40",
+    "label_sha256": "eb341b83ed8319dd6f95ffc3cca5b193ce610e11d64fa0d50b7008aa93804fdc",
+    "raw_bytes": 1044688,
+    "targets": 2
+  },
+  {
+    "recording": "Automotive/2019_04_09_pms2000",
+    "frame": 450,
+    "raw_path": "Automotive/2019_04_09_pms2000/radar_raw_frame/000450.mat",
+    "label_path": "Automotive/2019_04_09_pms2000/text_labels/0000000450.csv",
+    "raw_sha256": "26dac13320251f3fd2ac30154d9d91a8081385e6564faaf3b71886a9ff438eb6",
+    "label_sha256": "126c1f2572ba22c09ccb964c8ef83c56bba2b02557b1ff4043676a9a4fc7583b",
+    "raw_bytes": 1044688,
+    "targets": 2
+  },
+  {
+    "recording": "Automotive/2019_04_09_pms2000",
+    "frame": 673,
+    "raw_path": "Automotive/2019_04_09_pms2000/radar_raw_frame/000673.mat",
+    "label_path": "Automotive/2019_04_09_pms2000/text_labels/0000000673.csv",
+    "raw_sha256": "80046febd4c2c969ffb049fed3296a434b9f27297606518a5c4841a2fff7f161",
+    "label_sha256": "776aad18c1cc130fe621bf042e5d2de21ecf6c6dcae0cbe5078fd7c164278ec3",
+    "raw_bytes": 1044688,
+    "targets": 2
+  },
+  {
+    "recording": "Automotive/2019_04_09_pms3000",
+    "frame": 226,
+    "raw_path": "Automotive/2019_04_09_pms3000/radar_raw_frame/000226.mat",
+    "label_path": "Automotive/2019_04_09_pms3000/text_labels/0000000226.csv",
+    "raw_sha256": "dd42cd210d3e9d8303bf05f2156d136edd0b9a589061af0aaaa7a9829d6c88ac",
+    "label_sha256": "7e4bf90bc3312acedc9131de407f8053f6b9d2508588ef159f28e380d7a744c5",
+    "raw_bytes": 1044688,
+    "targets": 2
+  },
+  {
+    "recording": "Automotive/2019_04_09_pms3000",
+    "frame": 450,
+    "raw_path": "Automotive/2019_04_09_pms3000/radar_raw_frame/000450.mat",
+    "label_path": "Automotive/2019_04_09_pms3000/text_labels/0000000450.csv",
+    "raw_sha256": "2a70b5aa362dcb0d84ce384d961449cba0f7e877229dd62c32f4d1d811b3f837",
+    "label_sha256": "8b6cf2b292e6f755895ed8c801857fd0b271e9034bfd048ab0f6f0ca2f0eb498",
+    "raw_bytes": 1044688,
+    "targets": 2
+  },
+  {
+    "recording": "Automotive/2019_04_09_pms3000",
+    "frame": 673,
+    "raw_path": "Automotive/2019_04_09_pms3000/radar_raw_frame/000673.mat",
+    "label_path": "Automotive/2019_04_09_pms3000/text_labels/0000000673.csv",
+    "raw_sha256": "912e14b3b7b5f0c4877bea8261ff7dfdfec5126879e53b595d5f01e4e917ec6f",
+    "label_sha256": "a59192381a445a04161dadd2c437093af6b61d8ff8f99a11009d12fd6aef947f",
+    "raw_bytes": 1044688,
+    "targets": 3
+  },
+  {
+    "recording": "Automotive/2019_04_30_cm1s000",
+    "frame": 226,
+    "raw_path": "Automotive/2019_04_30_cm1s000/radar_raw_frame/000226.mat",
+    "label_path": "Automotive/2019_04_30_cm1s000/text_labels/0000000226.csv",
+    "raw_sha256": "ce544828e87aaf47fc23c3678737cf70bac9a31062301a09e7c26ef21da6d348",
+    "label_sha256": "c15452c8f29b124b53641383d70b0617b1959faa88d63c3f2b2f6f159bdc9d03",
+    "raw_bytes": 1044688,
+    "targets": 1
+  },
+  {
+    "recording": "Automotive/2019_04_30_cm1s000",
+    "frame": 450,
+    "raw_path": "Automotive/2019_04_30_cm1s000/radar_raw_frame/000450.mat",
+    "label_path": "Automotive/2019_04_30_cm1s000/text_labels/0000000450.csv",
+    "raw_sha256": "5287e96c2f160b082c765ca8c5be1e79429b6005366d1e0c27b706b48421a192",
+    "label_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_bytes": 1044688,
+    "targets": 0
+  },
+  {
+    "recording": "Automotive/2019_04_30_cm1s000",
+    "frame": 674,
+    "raw_path": "Automotive/2019_04_30_cm1s000/radar_raw_frame/000674.mat",
+    "label_path": "Automotive/2019_04_30_cm1s000/text_labels/0000000674.csv",
+    "raw_sha256": "0b7aeaec7888426da41abd5c004a68c262d5c245ab1077be86d392e05d894c77",
+    "label_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_bytes": 1044688,
+    "targets": 0
+  },
+  {
+    "recording": "Automotive/2019_04_30_mlms000",
+    "frame": 227,
+    "raw_path": "Automotive/2019_04_30_mlms000/radar_raw_frame/000227.mat",
+    "label_path": "Automotive/2019_04_30_mlms000/text_labels/0000000227.csv",
+    "raw_sha256": "aa39079418a21265ecaa2f7b2fb872ea9f4b6bfe0f8b20848e441e5c96648222",
+    "label_sha256": "b259cc9bfd012c23d1cf651719a014c93f10d1ac40acd90fc7afac04f0088805",
+    "raw_bytes": 1044688,
+    "targets": 2
+  },
+  {
+    "recording": "Automotive/2019_04_30_mlms000",
+    "frame": 451,
+    "raw_path": "Automotive/2019_04_30_mlms000/radar_raw_frame/000451.mat",
+    "label_path": "Automotive/2019_04_30_mlms000/text_labels/0000000451.csv",
+    "raw_sha256": "20ddfa4d0a8bc60be1af0cfe539b16bb26193532c52ba4f0b253ddabf780c795",
+    "label_sha256": "bcf7f625b4be00f7ac13da0dd4b768616d8a2a66381791456c90203817d6228f",
+    "raw_bytes": 1044688,
+    "targets": 2
+  },
+  {
+    "recording": "Automotive/2019_04_30_mlms000",
+    "frame": 675,
+    "raw_path": "Automotive/2019_04_30_mlms000/radar_raw_frame/000675.mat",
+    "label_path": "Automotive/2019_04_30_mlms000/text_labels/0000000675.csv",
+    "raw_sha256": "17507a7259e7481d68be1c56aa33fb93b9614093a210b3dfb5be1574171d3ca7",
+    "label_sha256": "7ffbd6402e7b96a92271b7899dccc0ea88465104fa7e07fe69eb04d5dc0b0042",
+    "raw_bytes": 1044688,
+    "targets": 2
+  },
+  {
+    "recording": "Automotive/2019_04_30_mlms001",
+    "frame": 227,
+    "raw_path": "Automotive/2019_04_30_mlms001/radar_raw_frame/000227.mat",
+    "label_path": "Automotive/2019_04_30_mlms001/text_labels/0000000227.csv",
+    "raw_sha256": "9e3f4ee810ea0811b9fae77d0e657aa5ae389fc2a4f482779a42d8906a9413c2",
+    "label_sha256": "9f98701074ee13fb89ecdcffcf4f1541f55d7e0dd4f56e57d84d590a26303f4f",
+    "raw_bytes": 1044688,
+    "targets": 3
+  },
+  {
+    "recording": "Automotive/2019_04_30_mlms001",
+    "frame": 451,
+    "raw_path": "Automotive/2019_04_30_mlms001/radar_raw_frame/000451.mat",
+    "label_path": "Automotive/2019_04_30_mlms001/text_labels/0000000451.csv",
+    "raw_sha256": "ddc40ce728aa73e6f8914d63b69ba0d802fd70c4df5733071b9d8abb26ff2973",
+    "label_sha256": "6e536f2ec8cf74ae91e853ba8fcf3481b6bde6a69ec04728cb3dc8aa579931c9",
+    "raw_bytes": 1044688,
+    "targets": 2
+  },
+  {
+    "recording": "Automotive/2019_04_30_mlms001",
+    "frame": 675,
+    "raw_path": "Automotive/2019_04_30_mlms001/radar_raw_frame/000675.mat",
+    "label_path": "Automotive/2019_04_30_mlms001/text_labels/0000000675.csv",
+    "raw_sha256": "62f2ccb668fa10d61a19d3eae45fce2738b0dfee0dea96a9d0a971884657a421",
+    "label_sha256": "efc32de32f908f96e00ca211334c19549ed9abdac723f98beab891f064f8b066",
+    "raw_bytes": 1044688,
+    "targets": 3
+  },
+  {
+    "recording": "Automotive/2019_04_30_pbms002",
+    "frame": 227,
+    "raw_path": "Automotive/2019_04_30_pbms002/radar_raw_frame/000227.mat",
+    "label_path": "Automotive/2019_04_30_pbms002/text_labels/0000000227.csv",
+    "raw_sha256": "70f1de16130c70fbafdb960ad8386675ae10bf403db4fba022dc2bde3e7c86db",
+    "label_sha256": "32c6e35f920c9e234fdb904a071c98818174005fdcc71025d2671f13728f759e",
+    "raw_bytes": 1044688,
+    "targets": 2
+  },
+  {
+    "recording": "Automotive/2019_04_30_pbms002",
+    "frame": 451,
+    "raw_path": "Automotive/2019_04_30_pbms002/radar_raw_frame/000451.mat",
+    "label_path": "Automotive/2019_04_30_pbms002/text_labels/0000000451.csv",
+    "raw_sha256": "8a902555589c02d5c017bccdb7faf0a551fc23cd5399dbba5fafa5b065f7d90c",
+    "label_sha256": "9dec56eac3df4269a9f17ed16b55eb765775ce1fd9896f268b6cac5e6ce8ad80",
+    "raw_bytes": 1044688,
+    "targets": 2
+  },
+  {
+    "recording": "Automotive/2019_04_30_pbms002",
+    "frame": 675,
+    "raw_path": "Automotive/2019_04_30_pbms002/radar_raw_frame/000675.mat",
+    "label_path": "Automotive/2019_04_30_pbms002/text_labels/0000000675.csv",
+    "raw_sha256": "f76a168d0e82c5a9944e690013f104dc9fceb035c923647111e56f3fd47f0bc3",
+    "label_sha256": "0b322e1d9f4d18142f6d181014fdd792e96bd2494d8e84f1a99932b9435e7059",
+    "raw_bytes": 1044688,
+    "targets": 2
+  },
+  {
+    "recording": "Automotive/2019_04_30_pbss000",
+    "frame": 227,
+    "raw_path": "Automotive/2019_04_30_pbss000/radar_raw_frame/000227.mat",
+    "label_path": "Automotive/2019_04_30_pbss000/text_labels/0000000227.csv",
+    "raw_sha256": "e1f0cc8f355fb29ef697e29050d6f287f185c807c20d37d11b79ae314c271c0c",
+    "label_sha256": "905d68fe2e481a485607258b4badd031cf8e77fca6c7bb766ec201e555bbab69",
+    "raw_bytes": 1044688,
+    "targets": 2
+  },
+  {
+    "recording": "Automotive/2019_04_30_pbss000",
+    "frame": 451,
+    "raw_path": "Automotive/2019_04_30_pbss000/radar_raw_frame/000451.mat",
+    "label_path": "Automotive/2019_04_30_pbss000/text_labels/0000000451.csv",
+    "raw_sha256": "caae1a60bc60a2cf13587dc956da604e4d9ea3ebd8665eadad7addcc54f9dcbb",
+    "label_sha256": "f3c621622669f4609a02be17822bd08e960ffc52dfa51d27909368413d6ca83d",
+    "raw_bytes": 1044688,
+    "targets": 2
+  },
+  {
+    "recording": "Automotive/2019_04_30_pbss000",
+    "frame": 675,
+    "raw_path": "Automotive/2019_04_30_pbss000/radar_raw_frame/000675.mat",
+    "label_path": "Automotive/2019_04_30_pbss000/text_labels/0000000675.csv",
+    "raw_sha256": "d789bf287831784b814a40ba70925cc0f3099a36347e885ea6895f38defd528d",
+    "label_sha256": "5122ad147bc1e8acd74fa910b4b9e3329e19083fdce493855fe67a3525ae45b5",
+    "raw_bytes": 1044688,
+    "targets": 2
+  },
+  {
+    "recording": "Automotive/2019_04_30_pcms001",
+    "frame": 227,
+    "raw_path": "Automotive/2019_04_30_pcms001/radar_raw_frame/000227.mat",
+    "label_path": "Automotive/2019_04_30_pcms001/text_labels/0000000227.csv",
+    "raw_sha256": "3871d388a8f604fdf7795548c518a2f660870215ea9f8c9d5eb8025053a044b0",
+    "label_sha256": "5b1912ad680235d7434875073db5fb687bb0f4a28df493fb28ebc40f9cd89fe5",
+    "raw_bytes": 1044688,
+    "targets": 2
+  },
+  {
+    "recording": "Automotive/2019_04_30_pcms001",
+    "frame": 451,
+    "raw_path": "Automotive/2019_04_30_pcms001/radar_raw_frame/000451.mat",
+    "label_path": "Automotive/2019_04_30_pcms001/text_labels/0000000451.csv",
+    "raw_sha256": "df07f3515ffa7cce105fa42df402a6703085db47841cd643172462c61acd5f3d",
+    "label_sha256": "af9ab4a5c31230ecc0581b62cd67236373503a57d3dd6fab5bd32e24558ca77d",
+    "raw_bytes": 1044688,
+    "targets": 1
+  },
+  {
+    "recording": "Automotive/2019_04_30_pcms001",
+    "frame": 675,
+    "raw_path": "Automotive/2019_04_30_pcms001/radar_raw_frame/000675.mat",
+    "label_path": "Automotive/2019_04_30_pcms001/text_labels/0000000675.csv",
+    "raw_sha256": "a08d375c1e1fcc7c4ebf4bec27dd17bc02d159cd7987e8390617c166aa0f362c",
+    "label_sha256": "77450d395ab5f775792ad6915c8604b8ba71b0d49fd25d9bf6e2485ceeaab12b",
+    "raw_bytes": 1044688,
+    "targets": 3
+  },
+  {
+    "recording": "Automotive/2019_05_09_bm1s007",
+    "frame": 227,
+    "raw_path": "Automotive/2019_05_09_bm1s007/radar_raw_frame/000227.mat",
+    "label_path": "Automotive/2019_05_09_bm1s007/text_labels/0000000227.csv",
+    "raw_sha256": "feb97c9d55eab9d2919c48e135781d29d012faa56a524f08dd6bf6fc1e89a1fd",
+    "label_sha256": "58038569a83de14ec391a9e86f293e05ca8addafedc87c9ed0423dae6a316457",
+    "raw_bytes": 1044688,
+    "targets": 5
+  },
+  {
+    "recording": "Automotive/2019_05_09_bm1s007",
+    "frame": 451,
+    "raw_path": "Automotive/2019_05_09_bm1s007/radar_raw_frame/000451.mat",
+    "label_path": "Automotive/2019_05_09_bm1s007/text_labels/0000000451.csv",
+    "raw_sha256": "0c54cc1c66d704ad969b17d6b56e9852131af11145c385af87ac96e9e945dd5f",
+    "label_sha256": "6bd150e41c741d12fef9ed6b92d6077a8df5798a74301d6ad07d6fc3c0e324d9",
+    "raw_bytes": 1044688,
+    "targets": 5
+  },
+  {
+    "recording": "Automotive/2019_05_09_bm1s007",
+    "frame": 675,
+    "raw_path": "Automotive/2019_05_09_bm1s007/radar_raw_frame/000675.mat",
+    "label_path": "Automotive/2019_05_09_bm1s007/text_labels/0000000675.csv",
+    "raw_sha256": "a6ab7a0d805905eee02c35bc4605ee5e3f4085f713e59fc5139cd8aa36725ceb",
+    "label_sha256": "22b7a73dbe12eb6081cc32c93a99809f18907572841151662df8431d582a6394",
+    "raw_bytes": 1044688,
+    "targets": 5
+  },
+  {
+    "recording": "Automotive/2019_05_09_cm1s003",
+    "frame": 227,
+    "raw_path": "Automotive/2019_05_09_cm1s003/radar_raw_frame/000227.mat",
+    "label_path": "Automotive/2019_05_09_cm1s003/text_labels/0000000227.csv",
+    "raw_sha256": "b4fbaf7b92a0caf1528c3906d3c0452ab5b7b8c8478cdef8020097acc2f64bac",
+    "label_sha256": "e9a8a083be2c0de0a7bed4894d0a40767b7d08e47ed5ab1391e391fd5b4e4f0a",
+    "raw_bytes": 1044688,
+    "targets": 4
+  },
+  {
+    "recording": "Automotive/2019_05_09_cm1s003",
+    "frame": 451,
+    "raw_path": "Automotive/2019_05_09_cm1s003/radar_raw_frame/000451.mat",
+    "label_path": "Automotive/2019_05_09_cm1s003/text_labels/0000000451.csv",
+    "raw_sha256": "9e51b742b802afc375d73e4ef3080c54fda7204b992fc0b66f18af917efb25bf",
+    "label_sha256": "269d39b277f3f67f93953d261ccb21fa00f0d818347689419352e8eca80b0d0c",
+    "raw_bytes": 1044688,
+    "targets": 4
+  },
+  {
+    "recording": "Automotive/2019_05_09_cm1s003",
+    "frame": 675,
+    "raw_path": "Automotive/2019_05_09_cm1s003/radar_raw_frame/000675.mat",
+    "label_path": "Automotive/2019_05_09_cm1s003/text_labels/0000000675.csv",
+    "raw_sha256": "94cfffb4d515e0bebf8e6998c8e3a3866ede5b18112400c5a1628153f455aa3f",
+    "label_sha256": "659036c17ab486002b993267f9d7364a5bf76dee9d3a2dbee1e96ab094237d2c",
+    "raw_bytes": 1044688,
+    "targets": 4
+  },
+  {
+    "recording": "Automotive/2019_05_09_mlms003",
+    "frame": 227,
+    "raw_path": "Automotive/2019_05_09_mlms003/radar_raw_frame/000227.mat",
+    "label_path": "Automotive/2019_05_09_mlms003/text_labels/0000000227.csv",
+    "raw_sha256": "98f76c9e72f82ac9cc655200620244abef0fb88efd820e24583c324774769d36",
+    "label_sha256": "a0a47c88a755b1845dd78d67c5b5fa3ef404db469b90824253448f95980a51cc",
+    "raw_bytes": 1044688,
+    "targets": 8
+  },
+  {
+    "recording": "Automotive/2019_05_09_mlms003",
+    "frame": 451,
+    "raw_path": "Automotive/2019_05_09_mlms003/radar_raw_frame/000451.mat",
+    "label_path": "Automotive/2019_05_09_mlms003/text_labels/0000000451.csv",
+    "raw_sha256": "07da3571f37174cc93286c60a5fe8f0c17d336a79bf7bc5519f100396bdcebff",
+    "label_sha256": "e2aa68f07c32a68ffc81a547c800d598d2fe020f92691f232ff4e516bc073a48",
+    "raw_bytes": 1044688,
+    "targets": 5
+  },
+  {
+    "recording": "Automotive/2019_05_09_mlms003",
+    "frame": 675,
+    "raw_path": "Automotive/2019_05_09_mlms003/radar_raw_frame/000675.mat",
+    "label_path": "Automotive/2019_05_09_mlms003/text_labels/0000000675.csv",
+    "raw_sha256": "56e252cb36d935642f1329f42b33e2846793effb6c6c341fcfeb56f573bce90d",
+    "label_sha256": "20045bbdbbf895aba9ed7f34aaae2b90029857e758c0f5b899e25f45bfd91d93",
+    "raw_bytes": 1044688,
+    "targets": 5
+  },
+  {
+    "recording": "Automotive/2019_05_09_pbms004",
+    "frame": 227,
+    "raw_path": "Automotive/2019_05_09_pbms004/radar_raw_frame/000227.mat",
+    "label_path": "Automotive/2019_05_09_pbms004/text_labels/0000000227.csv",
+    "raw_sha256": "554108f044a15c80e650896b4b4059943ee79fe7c8e53932963600c077cc02cf",
+    "label_sha256": "38fe0243beb86915abd6fa54c88b9cb1ddf0fb9f8f00c8db4825e757e2a04e38",
+    "raw_bytes": 1044688,
+    "targets": 1
+  },
+  {
+    "recording": "Automotive/2019_05_09_pbms004",
+    "frame": 451,
+    "raw_path": "Automotive/2019_05_09_pbms004/radar_raw_frame/000451.mat",
+    "label_path": "Automotive/2019_05_09_pbms004/text_labels/0000000451.csv",
+    "raw_sha256": "0dc16dd5d33726344e95e906ceb3e8dafa90072db27823d491472314fac45e13",
+    "label_sha256": "42a095979edc9ab22aa92143b97433049c4fabacb2e63aa9c6fe49b37ddd3a4d",
+    "raw_bytes": 1044688,
+    "targets": 1
+  },
+  {
+    "recording": "Automotive/2019_05_09_pbms004",
+    "frame": 675,
+    "raw_path": "Automotive/2019_05_09_pbms004/radar_raw_frame/000675.mat",
+    "label_path": "Automotive/2019_05_09_pbms004/text_labels/0000000675.csv",
+    "raw_sha256": "e6d0d422d761feceed2a165ef29978a87f0b59e787e676aa442293098ae9af1a",
+    "label_sha256": "ee7da07530851b3caf5da00a2adde8f3311be030455d1fa74468b8c4d2d768fa",
+    "raw_bytes": 1044688,
+    "targets": 1
+  },
+  {
+    "recording": "Automotive/2019_05_09_pcms002",
+    "frame": 226,
+    "raw_path": "Automotive/2019_05_09_pcms002/radar_raw_frame/000226.mat",
+    "label_path": "Automotive/2019_05_09_pcms002/text_labels/0000000226.csv",
+    "raw_sha256": "659538d698578a2209231f75c2c5f444aaa18e1595b1be12b6e7f290006deb37",
+    "label_sha256": "83eecdff527a3a23b8908c2a928f4e09f17733d5f5ecc8c7e2990315807f95d6",
+    "raw_bytes": 1044688,
+    "targets": 2
+  },
+  {
+    "recording": "Automotive/2019_05_09_pcms002",
+    "frame": 450,
+    "raw_path": "Automotive/2019_05_09_pcms002/radar_raw_frame/000450.mat",
+    "label_path": "Automotive/2019_05_09_pcms002/text_labels/0000000450.csv",
+    "raw_sha256": "003bfe89f4d5c268d1c818863cd818bb0b8bd1a7fb1824ca670f7b543b2aad8d",
+    "label_sha256": "d6295fe20d3f7ae0eb3c867d7cc6b9737681de3849c6e3125bb7e079d4959558",
+    "raw_bytes": 1044688,
+    "targets": 1
+  },
+  {
+    "recording": "Automotive/2019_05_09_pcms002",
+    "frame": 674,
+    "raw_path": "Automotive/2019_05_09_pcms002/radar_raw_frame/000674.mat",
+    "label_path": "Automotive/2019_05_09_pcms002/text_labels/0000000674.csv",
+    "raw_sha256": "6dfc8bdec8ff6e085937f966caa9f95c8f0211188565114c416a17a5837ab221",
+    "label_sha256": "64f7cadc01a869ab27c4947443ff4c5140cbd57a5c0de39fd6cb23f272547ea4",
+    "raw_bytes": 1044688,
+    "targets": 1
+  },
+  {
+    "recording": "Automotive/2019_05_29_bcms000",
+    "frame": 227,
+    "raw_path": "Automotive/2019_05_29_bcms000/radar_raw_frame/000227.mat",
+    "label_path": "Automotive/2019_05_29_bcms000/text_labels/0000000227.csv",
+    "raw_sha256": "724e3ff27c03836040f200072274f0d341e556d00e351aaf62dd024f3a132acd",
+    "label_sha256": "f5c963ab98ae975c53ede2281edb3d4e655e4e9e378b8794e15b6a05292442c1",
+    "raw_bytes": 1044688,
+    "targets": 1
+  },
+  {
+    "recording": "Automotive/2019_05_29_bcms000",
+    "frame": 451,
+    "raw_path": "Automotive/2019_05_29_bcms000/radar_raw_frame/000451.mat",
+    "label_path": "Automotive/2019_05_29_bcms000/text_labels/0000000451.csv",
+    "raw_sha256": "8a4a25800cb0b79cb1d324d82d77a65f072e8c986aee7182741a312fcd31b08f",
+    "label_sha256": "528261de1562278a31c2438d68b227c46898ef2d157888a92dd9d728dfede803",
+    "raw_bytes": 1044688,
+    "targets": 1
+  },
+  {
+    "recording": "Automotive/2019_05_29_bcms000",
+    "frame": 675,
+    "raw_path": "Automotive/2019_05_29_bcms000/radar_raw_frame/000675.mat",
+    "label_path": "Automotive/2019_05_29_bcms000/text_labels/0000000675.csv",
+    "raw_sha256": "406292b1fa4f1ffb09eedbeb77372fd085151302ef82b4fdf7df630cab16169c",
+    "label_sha256": "93f45869908ed671bcc5b43538e7a1de6d548e0c8bae0d4d0857588458232fae",
+    "raw_bytes": 1044688,
+    "targets": 1
+  },
+  {
+    "recording": "Automotive/2019_05_29_cm1s014",
+    "frame": 227,
+    "raw_path": "Automotive/2019_05_29_cm1s014/radar_raw_frame/000227.mat",
+    "label_path": "Automotive/2019_05_29_cm1s014/text_labels/0000000227.csv",
+    "raw_sha256": "39b32b43245f68a44a9d843cd8043262c4eebad2147125dd1a1f8fb73fc90078",
+    "label_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_bytes": 1044688,
+    "targets": 0
+  },
+  {
+    "recording": "Automotive/2019_05_29_cm1s014",
+    "frame": 451,
+    "raw_path": "Automotive/2019_05_29_cm1s014/radar_raw_frame/000451.mat",
+    "label_path": "Automotive/2019_05_29_cm1s014/text_labels/0000000451.csv",
+    "raw_sha256": "6d2fb5bc726e840900923c854683471fed887e183f2ac7240e61950bc144a948",
+    "label_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_bytes": 1044688,
+    "targets": 0
+  },
+  {
+    "recording": "Automotive/2019_05_29_cm1s014",
+    "frame": 675,
+    "raw_path": "Automotive/2019_05_29_cm1s014/radar_raw_frame/000675.mat",
+    "label_path": "Automotive/2019_05_29_cm1s014/text_labels/0000000675.csv",
+    "raw_sha256": "8abddebff661768005bf85464d26b2418b0e2823581fc30301f0dc408abfec24",
+    "label_sha256": "9bdd03d2aa04c6a71547df843d7295656243946cd06e064a1d783af54907d6c8",
+    "raw_bytes": 1044688,
+    "targets": 1
+  },
+  {
+    "recording": "Automotive/2019_05_29_mlms006",
+    "frame": 227,
+    "raw_path": "Automotive/2019_05_29_mlms006/radar_raw_frame/000227.mat",
+    "label_path": "Automotive/2019_05_29_mlms006/text_labels/0000000227.csv",
+    "raw_sha256": "56a855b56462456a4bc2b3c0e26830575fb6d37bb0da86028d4ac73b7ade87fb",
+    "label_sha256": "b03ad7dc1de6929fa710e59c1fcd6d5735ac975ca2fbda317c229161d7fc50f5",
+    "raw_bytes": 1044688,
+    "targets": 2
+  },
+  {
+    "recording": "Automotive/2019_05_29_mlms006",
+    "frame": 451,
+    "raw_path": "Automotive/2019_05_29_mlms006/radar_raw_frame/000451.mat",
+    "label_path": "Automotive/2019_05_29_mlms006/text_labels/0000000451.csv",
+    "raw_sha256": "aa334cf0b2991ac43e160800cbba7eda83cfd701ef1d6ccb2deab2f44310688e",
+    "label_sha256": "b9bb951eca4ebbeeeae9283ae47f75defb5bd17ca984b940a3a33e1096edc4c2",
+    "raw_bytes": 1044688,
+    "targets": 1
+  },
+  {
+    "recording": "Automotive/2019_05_29_mlms006",
+    "frame": 675,
+    "raw_path": "Automotive/2019_05_29_mlms006/radar_raw_frame/000675.mat",
+    "label_path": "Automotive/2019_05_29_mlms006/text_labels/0000000675.csv",
+    "raw_sha256": "4dc893b9ed0f931813771aa88ee66aabe0a34534adb7cd124dc67165f086debb",
+    "label_sha256": "ab2d85374c6d158ab859e2bd6c5613b693b4cebf289bd9fe6c2f7645faec2503",
+    "raw_bytes": 1044688,
+    "targets": 1
+  },
+  {
+    "recording": "Automotive/2019_05_29_pbms007",
+    "frame": 227,
+    "raw_path": "Automotive/2019_05_29_pbms007/radar_raw_frame/000227.mat",
+    "label_path": "Automotive/2019_05_29_pbms007/text_labels/0000000227.csv",
+    "raw_sha256": "a8743b9951d85b9b5ebeb15447f255036e1a348b588c2294260179c43199ce0b",
+    "label_sha256": "f37700f97baa71f94e8cd620a6f8ea45ce8ac765a58727dd5cc98fdc8c8dc683",
+    "raw_bytes": 1044688,
+    "targets": 2
+  },
+  {
+    "recording": "Automotive/2019_05_29_pbms007",
+    "frame": 451,
+    "raw_path": "Automotive/2019_05_29_pbms007/radar_raw_frame/000451.mat",
+    "label_path": "Automotive/2019_05_29_pbms007/text_labels/0000000451.csv",
+    "raw_sha256": "691cfc108d89aa7e8ad126e33fe0f7c1f395a318bdf3a4d4837bd907eb494be5",
+    "label_sha256": "27237c8008c4c3c021647cb343af3467c7451080506315e54b79586093e6babb",
+    "raw_bytes": 1044688,
+    "targets": 2
+  },
+  {
+    "recording": "Automotive/2019_05_29_pbms007",
+    "frame": 675,
+    "raw_path": "Automotive/2019_05_29_pbms007/radar_raw_frame/000675.mat",
+    "label_path": "Automotive/2019_05_29_pbms007/text_labels/0000000675.csv",
+    "raw_sha256": "9a5521df8608702a8d2dce1e27254a27fb65f330db06fdeddad2037fc8f58e3d",
+    "label_sha256": "3861457307e81c56e38d6e9fcf3df773a9412009a4adf57fac4c699766e6a165",
+    "raw_bytes": 1044688,
+    "targets": 2
+  },
+  {
+    "recording": "Automotive/2019_05_29_pcms005",
+    "frame": 227,
+    "raw_path": "Automotive/2019_05_29_pcms005/radar_raw_frame/000227.mat",
+    "label_path": "Automotive/2019_05_29_pcms005/text_labels/0000000227.csv",
+    "raw_sha256": "921e1ddf127173397da39a97305effc08e55bfc45b941aadfda44fcba3f9122b",
+    "label_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_bytes": 1044688,
+    "targets": 0
+  },
+  {
+    "recording": "Automotive/2019_05_29_pcms005",
+    "frame": 451,
+    "raw_path": "Automotive/2019_05_29_pcms005/radar_raw_frame/000451.mat",
+    "label_path": "Automotive/2019_05_29_pcms005/text_labels/0000000451.csv",
+    "raw_sha256": "fb9d4dc77d66af3026737e238e71afd4e83ab645a65ea1d7308c3d0bf8c626af",
+    "label_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_bytes": 1044688,
+    "targets": 0
+  },
+  {
+    "recording": "Automotive/2019_05_29_pcms005",
+    "frame": 675,
+    "raw_path": "Automotive/2019_05_29_pcms005/radar_raw_frame/000675.mat",
+    "label_path": "Automotive/2019_05_29_pcms005/text_labels/0000000675.csv",
+    "raw_sha256": "0838e5a2fe991516e385d3c75e6d658adbf7b336de174be95c009f02f397b715",
+    "label_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_bytes": 1044688,
+    "targets": 0
+  }
+]
