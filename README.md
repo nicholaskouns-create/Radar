@@ -2,6 +2,15 @@
 
 # Radar
 
+## Optical Geometry × KKP-RADAR Educational Atlas
+
+[Launch the integrated optical–radar laboratory](https://nicholaskouns-create.github.io/Radar/optical-radar-atlas/) · [Standalone source](optical-radar-atlas/index.html) · [E₄₇ spectral bridge](https://nicholaskouns-create.github.io/E47-Kartekeya/interfaces/e47-radar-bridge/).
+
+Mobile-first, offline-capable browser laboratory with six optical geometry lessons plus six synthetic radar primers (moving echo, multipath, phase, clutter/CA-CFAR proxy, negative-space mapping, and seven-shell E₄₇). The radar engine processes procedurally generated complex I/Q patches using the unchanged 125-dimensional triple-spin-2 Casimir operator. Includes range–Doppler, phase/coherence/gradient/curvature, spectral shells, CFAR proxy, telemetry and local self-tests. Educational simulated data only; no measured detection performance is claimed.
+
+Research documentation: [KKP-RADAR concept proposal](https://docs.google.com/document/d/1cTyRJIj5FR9_afL3KWm9JMAiF_1T3fCVqmOBPLpmhbo/edit) · [Phase-retaining ADC prototype](src/e47_radar/adc.py).
+
+
 > **Current license:** [All Rights Reserved](LICENSE) for owned original material. No new reuse permission. Earlier licenses and third-party/public-domain rights remain unaffected.
 
 
