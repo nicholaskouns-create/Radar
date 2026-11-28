@@ -1,0 +1,36 @@
+name: Radar public Pages verification
+on:
+  push:
+    branches: [main]
+    paths: ['docs/**', '.github/workflows/radar-pages-smoke.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check configured source and public bytes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh api "repos/$GITHUB_REPOSITORY/pages" --jq '{build_type,source,html_url}' || true
+          base="https://nicholaskouns-create.github.io/Radar"
+          for route in index.html doppler/index.html optical-radar-atlas/index.html; do
+            ok=0
+            for attempt in $(seq 1 24); do
+              status=$(curl -sSL --max-time 15 -o /tmp/radar-page -w '%{http_code}' "$base/$route" || true)
+              if [ "$status" = 200 ] && cmp -s "docs/$route" /tmp/radar-page; then
+                echo "PASS $route: HTTP 200 and exact bytes"
+                ok=1
+                break
+              fi
+              echo "Attempt $attempt: $route HTTP $status"
+              sleep 10
+            done
+            test "$ok" = 1
+          done
