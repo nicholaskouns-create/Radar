@@ -2,6 +2,13 @@
 
 # Radar
 
+## Grid × Radar · Multimodal Live Observatory
+
+[**Open the Radar live multimodal map**](https://nicholaskouns-create.github.io/Radar/doppler/) · [Grid standalone](https://nicholaskouns-create.github.io/Identity/grid/radar/) · [Full source and provenance](MULTIMODAL.md).
+
+The shared NOAA MRMS reflectivity instrument now includes optional USGS earthquake, NIFC wildfire, NWS severe-weather, NOAA aurora forecast and published generating-plant overlays. It supplies device-local named view presets, cross-feed geographic proximity and warning-polygon facility intersections, and exportable source-labeled summaries. These are independent geographical measurements: no radar Doppler velocity, measured phase or operational detection performance is inferred from the environmental layers.
+
+
 ## Optical Geometry × KKP-RADAR Educational Atlas
 
 [Launch the integrated optical–radar laboratory](https://nicholaskouns-create.github.io/Radar/optical-radar-atlas/) · [Standalone source](optical-radar-atlas/index.html) · [E₄₇ spectral bridge](https://nicholaskouns-create.github.io/E47-Kartekeya/interfaces/e47-radar-bridge/).
